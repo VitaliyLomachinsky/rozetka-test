@@ -1,0 +1,401 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Oswald", sans-serif;
+  background-color: white;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+/* preview section */
+/* header */
+.preview {
+  padding: 50px 0;
+  background-image: url("https://i.ibb.co/CPpp47L/background-1.jpg");
+  height: fit-content;
+  background-repeat: no-repeat;
+  height: fit-content;
+  background-size: 100% 120%;
+}
+
+.preview_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.preview_logo {
+  width: fit-content;
+}
+.preview_title {
+  width: 70%;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 75px;
+}
+.sub_title {
+  letter-spacing: 3px;
+  font-size: 40px;
+}
+.title {
+  margin-top: 0;
+  width: 100%;
+  font-weight: 800;
+  letter-spacing: 5px;
+  font-size: 54px;
+}
+/* header image*/
+.preview_image_wrapper {
+  width: 100%;
+  height: 200px;
+  height: fit-content;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: -50px;
+}
+
+.preview_image {
+  width: 1000px;
+  height: auto;
+}
+/* header detail*/
+.preview_detail {
+}
+
+.detail_row {
+  display: flex;
+
+  justify-content: space-between;
+  padding: 0 80px;
+  color: white;
+  margin-top: 30px;
+  font-size: 24px;
+  line-height: 25px;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+.detail_row_item {
+  width: 300px;
+}
+
+.detail_title {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+}
+
+.detail_under-title {
+  font-size: 24px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.height_quality {
+  display: flex;
+  align-items: center;
+}
+
+.hypoallergenic {
+  display: flex;
+  align-items: center;
+}
+
+.height_quality::before {
+  content: url("https://i.ibb.co/ZKKNMyP/icon-1.png");
+  padding-right: 15px;
+}
+.hypoallergenic::before {
+  content: url("https://i.ibb.co/znhVkp7/icon-2.png");
+  padding-right: 15px;
+}
+
+/* content section */
+/* content image */
+.content {
+}
+
+.content_image_wrapper {
+  position: relative;
+  margin: 100px 0 140px 0;
+}
+
+.content_image {
+  width: 650px;
+  height: auto;
+}
+
+.cotton_image {
+  position: absolute;
+  height: auto;
+  width: 200px;
+  bottom: -50px;
+  right: 180px;
+  z-index: 10;
+}
+
+.content_image_number {
+  position: absolute;
+  background-color: white;
+  border: 4px solid #e3780b;
+  padding: 1px 15px;
+  font-size: 28px;
+  font-weight: bold;
+  border-radius: 50%;
+}
+
+.number_1 {
+  top: 85px;
+  left: 480px;
+  z-index: 10;
+}
+.number_2 {
+  top: 255px;
+  left: 480px;
+  z-index: 10;
+}
+
+.content_image_line {
+  position: absolute;
+
+  border-bottom: 1px solid black;
+
+  z-index: 1;
+}
+
+.line_1 {
+  top: 123px;
+  left: 490px;
+  transform: rotate(17deg);
+  width: 285px;
+  height: 50px;
+  border-bottom-right-radius: 1px;
+}
+
+.line_2 {
+  width: 200px;
+  top: 153px;
+  left: 760px;
+  height: 1px;
+  height: fit-content;
+  font-size: 24px;
+  line-height: 25px;
+  font-weight: 600;
+  padding: 0 20px 10px 20px;
+  letter-spacing: 2px;
+  border-bottom-left-radius: 1px;
+}
+
+.line_3 {
+  top: 330px;
+  left: 485px;
+  transform: rotate(55deg);
+  width: 80px;
+  height: 1px;
+  z-index: 1;
+}
+
+.line_4 {
+  top: 400px;
+  left: 705px;
+  transform: rotate(50deg);
+  width: 68px;
+  height: 1px;
+  z-index: 1;
+}
+
+.line_5 {
+  padding: 0 20px 10px 20px;
+  font-size: 24px;
+  line-height: 25px;
+  font-weight: 600;
+  width: 200px;
+  top: 391px;
+  left: 760px;
+  letter-spacing: 2px;
+  border-bottom-left-radius: 1px;
+}
+
+/* content image context */
+.content_image_context {
+  width: 100%;
+  height: fit-content;
+  position: absolute;
+  padding-top: 80px;
+  font-size: 20px;
+  display: none;
+}
+
+.context_number:last-child {
+  margin-top: 20px;
+}
+
+.context_number_1:before {
+  content: "1";
+  background-color: white;
+  border: 4px solid #e3780b;
+  padding: 1px 15px;
+  font-size: 28px;
+  font-weight: bold;
+  border-radius: 50%;
+  height: fit-content;
+}
+
+.context_number_2::before {
+  content: "2";
+  background-color: white;
+  border: 4px solid #e3780b;
+  padding: 1px 15px;
+  font-size: 28px;
+  font-weight: bold;
+  border-radius: 50%;
+  height: fit-content;
+}
+
+/* content property */
+.content_property {
+  margin-bottom: 10px;
+}
+
+.property_imageblock {
+  width: fit-content;
+}
+
+.right_image {
+  margin-left: 50px;
+  float: right;
+}
+.left_image {
+  margin-right: 50px;
+  float: left;
+}
+.property_imageblock_image {
+  width: 300px;
+  height: 300px;
+}
+
+.property_textblock {
+  height: 305px;
+  display: flex;
+  align-items: center;
+}
+
+.property_textblock_inner {
+  display: block;
+}
+
+.property_title {
+  color: #e3780b;
+  font-size: 36px;
+  letter-spacing: 3px;
+  padding-bottom: 10px;
+}
+.property_text {
+  font-size: 24px;
+  line-height: 26px;
+}
+
+/* compare */
+.compare {
+  padding-bottom: 100px;
+  padding-top: 10px;
+  background-image: url("image\ \(1\).jpg");
+  background-repeat: no-repeat;
+
+  background-size: 100% 110%;
+}
+
+.compare_table {
+}
+
+.compare_row {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+}
+.compare_title {
+  font-size: 42px;
+  margin: 30px 0 30px 0;
+  color: white;
+  text-align: center;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+}
+
+.compare_item {
+  width: 440px;
+  height: fit-content;
+  padding: 0 5px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.compare_img {
+  width: 100%;
+  height: auto;
+}
+
+.compare_item_title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: white;
+}
+.compare_row_title {
+  color: #e3780b;
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin-top: 5px;
+  margin-bottom: 3px;
+  padding-bottom: 5px;
+}
+
+.compare_property {
+  background-color: #e3780b;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  border-radius: 5px;
+  font-weight: 600;
+  padding: 15px 40px;
+  width: 100%;
+  letter-spacing: 2px;
+}
+
+/* compare footer  */
+
+.compare_footer {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.compare_footer_title {
+  color: white;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.smart {
+  font-weight: bolder;
+  letter-spacing: 3px;
+  font-size: 42px;
+  padding-bottom: 35px;
+}
